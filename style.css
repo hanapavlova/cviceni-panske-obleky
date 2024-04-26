@@ -44,10 +44,30 @@ h1.site-title span {
   margin: 0 2rem;
 }
 
+.product_colors {
+  display: inline-block;
+}
+
+.product_colors p {
+  text-align: center;
+}
+
+
 .product {
   margin-top: -5rem;
   padding: 3rem;
   background-color: #141518;
+}
+
+.colors {
+  padding: 10px, 10px;
+}
+
+.color-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 30px 30px;
 }
 
 .product__image {
@@ -58,4 +78,65 @@ h1.site-title span {
 .t-shirt {
   stroke: #000;
   stroke-width: 2;
+}
+
+
+.btn {
+  border: none;
+  padding: 30px 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  outline: 2px solid grey;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-bila {
+  background-color: #ffffff;
+}
+.btn-cerna {
+  background-color: #000000;
+}
+.btn-cervena {
+  background-color: #ff0000;
+}
+.btn-modra {
+  background-color: #87ceeb;
+}
+
+.color-kolo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+.color-kolo p {
+ text-align: center;
+}
+
+
+
+.tlacitko {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 10px 40px;
+  outline: 2px solid white;
+  border-radius: 25px;
+}
+
+.akce {
+  position: absolute; 
+  right: 100px; 
+  bottom: 30px;
+}
+
+.akce a:hover,
+.akce a:focus {
+    color: white;
+    background-color: blue;
+    border-radius: 25px;
 }

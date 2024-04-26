@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <script type="module" src="index.js"></script>
+    
 
     <title>Pánské obleky</title>
   </head>
@@ -18,11 +18,14 @@
         </h1>
       </div>
     </header>
+
+
     <div class="product container">
       <svg
         id="product-image"
         class="product__image t-shirt"
         style="fill: #a6a6a6"
+       
         viewBox="0 0 270 360"
       >
         <path
@@ -60,15 +63,46 @@
           d="m 245.54623,337.97976 a 3.4333565,3.4333565 0 0 1 -3.43336,3.43336 3.4333565,3.4333565 0 0 1 -3.43336,-3.43336 3.4333565,3.4333565 0 0 1 3.43336,-3.43335 3.4333565,3.4333565 0 0 1 3.43336,3.43335 z"
         />
       </svg>
-      <div class="product__colors">
+
+<!-- buttons níže jsou ty, na které se bude dělat JS na změnu barvy košile -->
+      <div class="product_colors">
         <p>Pomocí tlačítek vyberte barvu produktu</p>
-<div class="colors">
-  <div class="color">
-    <div class="color-box"></div>
-    <p class="color__name">bílá</p>
-  </div>
-</div>
-</div>
+          <div class="colors">
+      
+            <div class="color-box">
+              <div class="color-kolo">
+              <button id="color-white" class="btn btn-bila"></button>
+               <p class="color_name">bílá</p>
+               </div>
+
+              <div class="color-kolo">
+              <button id="color-black" class="btn btn-cerna"></button>
+              <p class="color_name">černá</p>
+              </div>
+
+              <div class="color-kolo">
+              <button id="color-red" class="btn btn-cervena"></button>
+              <p class="color_name">červená</p>
+              </div>
+
+              <div class="color-kolo">
+              <button id="color-blue" class="btn btn modra"></button>
+              <p class="color_name">nebezky<br/>modrá</p>
+              </div>
+        
+
+            <div class="akce">
+              <a class="tlacitko" href="#">Objednat</a>
+            </div>
+
+ 
+
+          </div>
+      </div>
     </div>
+
+    <script type="module" src="index.js"></script>
+
+
   </body>
 </html>
