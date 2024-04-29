@@ -2,9 +2,12 @@ console.log('funguju');
 
 
 
-const button = document.querySelector(".btn");
+//const button = document.querySelector(".btn"); > takhle to nejde, protože to vybere jen první s těch selektorů, takže se to musí udělat přes pole a forEach
 
-button.addEventListener("click", (event) => {
+const buttons = Array.from(document.getElementsByClassName("btn"));
+
+buttons.forEach((button) => {
+    button.addEventListener("click", (event) => {
     
     const kosile = document.querySelector("#product-image")
   
@@ -17,4 +20,5 @@ button.addEventListener("click", (event) => {
     } else if (event.target.classList.contains("btn-modra")) {
         kosile.style.fill = "rgb(137,172,204)"
     }
+})
 })
