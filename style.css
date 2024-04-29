@@ -57,10 +57,12 @@ h1.site-title span {
   margin-top: -5rem;
   padding: 3rem;
   background-color: #141518;
+  display: flex;
 }
 
 .colors {
-  padding: 10px, 10px;
+  padding: 10px 10px;
+  position: relative;
 }
 
 .color-box {
@@ -73,6 +75,7 @@ h1.site-title span {
 .product__image {
   width: 6rem;
   height: auto;
+  padding-right: 10px;
 }
 
 .t-shirt {
@@ -99,10 +102,10 @@ h1.site-title span {
   background-color: #000000;
 }
 .btn-cervena {
-  background-color: #ff0000;
+  background-color: rgb(149,50,50);
 }
 .btn-modra {
-  background-color: #87ceeb;
+  background-color: rgb(137,172,204);
 }
 
 .color-kolo {
@@ -116,13 +119,10 @@ h1.site-title span {
  text-align: center;
 }
 
-
-
 .tlacitko {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background-color: black;
   padding: 10px 40px;
   outline: 2px solid white;
   border-radius: 25px;
@@ -130,8 +130,8 @@ h1.site-title span {
 
 .akce {
   position: absolute; 
-  right: 100px; 
-  bottom: 30px;
+  left: 450px; 
+  bottom: 75px;
 }
 
 .akce a:hover,
