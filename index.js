@@ -1,20 +1,35 @@
 console.log('funguju');
 
-
-
-const button = document.querySelector(".btn");
-
-button.addEventListener("click", (event) => {
-    
-    const kosile = document.querySelector("#product-image")
+const changeWhite = () => {
+    document.getElementById("product-image").style = "fill: #ffffff" 
+  };
   
-    if (event.target.classList.contains("btn-cerna")) {
-        kosile.style.fill = "#000000";
-    } else if (event.target.classList.contains("btn-cervena")) {
-        kosile.style.fill = "rgb(149,50,50)";
-    } else if (event.target.classList.contains("btn-bila")) {
-        kosile.style.fill = "#ffffff";
-    } else if (event.target.classList.contains("btn-modra")) {
-        kosile.style.fill = "rgb(137,172,204)"
-    }
-})
+  const btnWhite = document.querySelector('#color-white');
+  btnWhite.addEventListener('click', changeWhite);
+    
+  
+  
+  const changeBlack = () => {
+    document.getElementById("product-image").style = "fill: #000000; stroke: #ffffff" 
+  }
+  
+  const btnBlack = document.querySelector('#color-black');
+  btnBlack.addEventListener('click', changeBlack);
+  
+  
+  
+  const changeRed = () => {
+    document.getElementById("product-image").style = "fill: #953232" 
+  };
+  
+  const btnRed = document.querySelector('#color-red');
+  btnRed.addEventListener('click', changeRed);
+  
+  
+  
+  const changeBlue = () => {
+    document.getElementById("product-image").style = "fill: #89accc" 
+  };
+  
+  const btnBlue = document.querySelector('#color-blue');
+  btnBlue.addEventListener('click', changeBlue);
